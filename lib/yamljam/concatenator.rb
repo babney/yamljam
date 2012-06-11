@@ -1,7 +1,6 @@
 module Yamljam
 	class Concatenator
 		def concatenate(input_files, output_file)
-      puts "input files: #{input_files.inspect}"
       output_hashmap = merge_files(input_files)
       write_output(output_hashmap, output_file)
     end

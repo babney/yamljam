@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require 'yamljam'
+
+if !ARGV[0] || ARGV[0] == "--help"
+	puts "usage: yamljam <directory>"
+	puts "Creates a <directory>.yml file containing the keys from all yml files found in <directory>. Does not work recursively yet!"
+else
+	Yamljam::Concatenator.new.jam(Dir.getwd, ARGV[0])
+end
