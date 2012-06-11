@@ -1,0 +1,4 @@
+yamljam
+=======
+
+jam your yaml
