@@ -1,9 +1,5 @@
 module Yamljam
   class Jammer
-    def merged_hash
-      @hash ||= {}
-    end
-
     def write_output(output_hashmap, output_file)
       begin
         File.open(output_file, 'w') do |f|
