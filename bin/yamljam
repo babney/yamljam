@@ -7,7 +7,7 @@ if !ARGV[0] || ARGV[0] == "--help"
 	puts "Creates a <directory>.yml file containing the keys from all yml files found in <directory>. Does not work recursively yet!"
 else
 	begin
-		Yamljam::Jammer.new.jam(Dir.getwd, ARGV[0])
+		Yamljam::Jammer.new.jam(ARGV[0])
 	rescue Exception => ex
 		puts "failed due to exception: #{ex.class}! message was #{ex.message}"
 	end
