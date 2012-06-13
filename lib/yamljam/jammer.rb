@@ -40,11 +40,6 @@ module Yamljam
       end
     end
 
-    def name_of_dotdot
-      # is there seriously not a better way to do this?
-      Dir.chdir(".."){File.split(Dir.getwd).last}
-    end
-
     def is_yaml?(filename)
       %w[yml yaml].include?(filename.split(".").last)
     end
